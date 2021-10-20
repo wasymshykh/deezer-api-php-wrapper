@@ -9,6 +9,9 @@
             "homepage": "https://iamwaseem.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/wasymshykh/deezer-api-php-wrapper/issues"
+    },
     "keywords": [ "deezer", "api" ],
     "homepage": "https://github.com/wasymshykh/deezer-api-php-wrapper",
     "type": "library",
@@ -21,14 +24,18 @@
         "ext-json": "*",
         "symfony/http-client": "^4.3|^4.4|^5.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
-        "psr-4": {
-            "wasymshykh\\DeezerAPI\\": "src/"
-        }
+        "classmap": [
+            "src/"
+        ]
     },
-    "autoload-dev": {
-        "psr-4": {
-            "wasymshykh\\DeezerAPI\\Tests\\": "tests/"
-        }
+    "config": {
+        "platform": {
+            "php": "7.3.0"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }
